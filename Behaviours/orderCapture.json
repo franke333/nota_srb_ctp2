@@ -1,0 +1,106 @@
+{
+	"additionalNodes": [ {
+		"children": [],
+		"id": "S9FWy8q5ifM6kwGzmcV3mRTtFIMdKVO3",
+		"nodeType": "reference",
+		"parameters": [ {
+			"name": "behaviourName",
+			"value": "nota_srb_ctp2.captureHill"
+		} ],
+		"referenceInputs": [ {
+			"name": "hillToCapture",
+			"value": "1"
+		} ],
+		"referenceOutputs": []
+	} ],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 237
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"3lPvNdV4CWTkwNKkpwbxTJNBetfvZ4Xd": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 254,
+			"y": -178
+		},
+		"S9FWy8q5ifM6kwGzmcV3mRTtFIMdKVO3": {
+			"height": 130,
+			"title": "reference",
+			"width": 239,
+			"x": 1135,
+			"y": -85
+		},
+		"b4s0gjLKF0WeMl9kirL57XnMNMZtiWn7": {
+			"height": 90,
+			"title": "Common.move",
+			"width": 351,
+			"x": 630,
+			"y": -36
+		},
+		"lt6TVII5VZhDpEEAP5NlIWyhxB3STDLy": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 439,
+			"y": -15
+		},
+		"ssaoJ1HeNgD2mQsGxCwUaj3YV16Ez0Uq": {
+			"height": 94,
+			"title": "store",
+			"width": 265,
+			"x": 538,
+			"y": -279
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "ssaoJ1HeNgD2mQsGxCwUaj3YV16Ez0Uq",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "hillPositions"
+			}, {
+				"name": "value",
+				"value": "nota_srb_ctp2.FindHill(192)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "b4s0gjLKF0WeMl9kirL57XnMNMZtiWn7",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "pos",
+					"value": "{x = hillPositions[1][1], z = hillPositions[1][2]}"
+				}, {
+					"name": "fight",
+					"value": "true"
+				}, {
+					"name": "scriptName",
+					"value": "Common.move"
+				} ],
+				"scriptName": "Common.move"
+			} ],
+			"id": "lt6TVII5VZhDpEEAP5NlIWyhxB3STDLy",
+			"nodeType": "repeat",
+			"parameters": []
+		} ],
+		"id": "3lPvNdV4CWTkwNKkpwbxTJNBetfvZ4Xd",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"additionalNodes": [ {
+		"children": [],
+		"id": "f7kpVR1UHFXhN3RiX0kTjSLYDuLY8Sri",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "msg",
+			"value": "core.MissionInfo()"
+		}, {
+			"name": "scriptName",
+			"value": "echo"
+		} ],
+		"scriptName": "echo"
+	} ],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 237
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "hillToCapture"
+	} ],
+	"outputs": [],
+	"properties": {
+		"7s0cZdVBGXmQTenX5RY0s7E3EJA9fjg7": {
+			"height": 94,
+			"title": "store",
+			"width": 198,
+			"x": 395,
+			"y": -159
+		},
+		"f7kpVR1UHFXhN3RiX0kTjSLYDuLY8Sri": {
+			"height": 74,
+			"title": "echo",
+			"width": 192,
+			"x": 515,
+			"y": 12
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [],
+		"id": "7s0cZdVBGXmQTenX5RY0s7E3EJA9fjg7",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "x"
+		}, {
+			"name": "value",
+			"value": "core.MissionInfo()"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}
+}
