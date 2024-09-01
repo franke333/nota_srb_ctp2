@@ -65,7 +65,7 @@ return function(hillHeight)
     for x = 1,width/scale do
         for y = 1,height/scale do
             if map[x][y] ~= 0 then
-                hillPositions[map[x][y]] = {x*scale*Game.squareSize,y*scale*Game.squareSize}
+                hillPositions[map[x][y]] = Vec3(x*scale*Game.squareSize,hillHeight,y*scale*Game.squareSize)
             end
         end
     end
